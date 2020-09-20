@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CLEMNT</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>music maker</h1>
+    <button>click to start music cos javascript doesnt auto play music</button>
+    <br>
+    the irritating tune that keeps playing is the sequence of 'A4', 'C4', 'E4', 'G4', 'A5','C5', 'E5', 'G5'
+    <br>
+    at bpm of 120
+    <div class="bpmcontainer">
+        <p>BPM slider (max 135, min 80):</p>
+        <input type="range" min="80" max="135" value="120" class="slider" id="bpmSlider">
+        <p>Value: <span id="bpmValue"></span></p>
+    </div>
+
+    <div class="drums">
+
+        this is kick
+      <div class="kick">
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+      </div>
+      this is snare
+      <div class="snare">
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+      </div>
+    </div>
+    <br>
+    there is no CSS done cos who cares about css.. 
+    <br>
+    club lofi © by nysha, junyi, jingjie
+  
+    <script src="./node_modules/tone/build/Tone.js"></script>
+    <script src="app.js" async defer></script>
+  </body>
+</html>
